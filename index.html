@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service javascript</title>
+	<link rel="stylesheet" href="src/css/index.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="startDevinette()">
+	<div class="container">
+		<blink>
+			<center>
+				<b>Tentez votre chance sur top 10</b>
+			</center>
+		</blink>
+		<center>
+			<div class="panel panel-default">
+				<div class="panel-heading">Devinette top 10</div>
+				<div class="panel-body">
+					<center>
+						<p>Vous allez trouver un nombre entre 1 à 10!</p>
+					</center>
+					<label for="number">Votre chiffre:</label>
+					<input type="text" class="form-control" id="number"/>
+					<center>
+						<button type="button" onclick="validate()" class="btn btn-primary">Valider</button>
+					</center>
+				</div>
+			</div>
+			<div class="panel panel-success" id="OK">
+				<div class="panel-heading">Vous avez trouvé la bonne réponse</div>
+				<div class="panel-body">
+					<b id="mineNumberSuccesOne">Votre chiffre:</b><p id="mineNumberSucces"></p>
+					<br/>
+					<br/>
+					<b id="resultNumberSuccesOne">Résutat:</b><p id="resultNumberSucces"></p>
+				</div>
+			</div>
+
+			<div class="panel panel-danger" id="KO">
+				<div class="panel-heading">Vous n'avez pas trouvé la bonne réponse</div>
+				<div class="panel-body">
+					<b id="mineNumberFailOne">Votre chiffre:</b>
+					<p id="mineNumberFail"></p>
+					<br/>
+					<br/>
+					<b id="resultNumberFailOne">Résutat:</b>
+					<p id="resultNumberFail"></p>
+				</div>
+			</div>
+		</center>
+	</div>
+	<script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>

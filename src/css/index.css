@@ -1,0 +1,28 @@
+body{
+	margin:auto;
+	width: 600px;
+}
+.panel-heading{
+	text-align: center;
+}
+.panel-default{
+	width: 500px;
+	margin-top: 100px;
+}
+.panel-success,.panel-danger{
+	width: 500px;
+}
+.btn{
+	margin-top: 5px;
+}
+#mineNumberSucces,#mineNumberSuccesOne,#mineNumberFail,#mineNumberFailOne,#resultNumberSuccesOne,#resultNumberFailOne,#resultNumberSucces,#resultNumberFail{
+	float: left;
+}
+#mineNumberSucces,#mineNumberFail,#resultNumberSucces,#resultNumberFail{
+	margin-left: 10px;
+}
+blink{
+	font-size: 30px;
+	text-align: center;
+	animation: 2s linear infinite condemed_blink_effect;
+}
